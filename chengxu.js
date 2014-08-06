@@ -32,23 +32,30 @@ function down(x){
     if (dianjiluoji(x)) {
         document.getElementById('s' + x).style.border = " 2px gray inset";
     }
-    
+    else {
+        document.getElementById('s' + x).style.color = "red";
+    }
 };
 
 function up(x){
-    document.getElementById('s' + x).style.border = " 2px gray outset"
+    document.getElementById('s' + x).style.color = "#fff";
+    
+    document.getElementById('s' + x).style.border = " 2px gray outset";
+    
+    
     if (now_dianji >= 26) {
         clearTimeout(t);
         chengji = document.getElementById('miaobiao').innerHTML;
-         weixinfenxiang();
-        if (confirm("您的本局"+chengji+"是否再来一局？")) {
-           kaishiwan();
+        weixinfenxiang();
+        if (confirm("您的本局" + chengji + "是否再来一局？")) {
+            kaishiwan();
         }
         else {
-           return false;
+			alert("赶紧点右上角来分享到朋友圈吧!");
+            return false;
         }
- //alert(chengji);
         
+    
     }
     return false;
 };
