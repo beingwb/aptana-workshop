@@ -4,33 +4,31 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 640px;
+    width: 320px;
     display: block;
     color: #fff;
+	border: 2px gray outset;
 	
 }
 
 #qipan span {
-	margin-left: auto;
-    margin-right: auto;
-    float: left;
-    line-height: 120px;
-    font-size: 60px;
+ float: left;
+    line-height: 60px;
+   	font-size:inherit;
     background-color: gray;
-    width: 120px;
-    height: 120px;
+    width: 60px;
+    height: 60px;
     border: 2px gray outset;
-    margin: 2 2 2 2;
-    overflow: hidden;
+    
 }
 
 #miaobiao {
     margin-left: auto;
     margin-right: auto;
-    width: 640px;
+    width: 320px;
 	text-align: center;
-    line-height: 120px;
-    font-size: 60px;    
+    line-height: 60px;
+    font-size:inherit;
     display: block;
     color: #fff;
 	background-color: gray;
@@ -41,10 +39,10 @@
 #kongzhi {
     margin-left: auto;
     margin-right: auto;
-    width: 640px;
+    width: 320px;
 	text-align: center;
-    line-height: 120px;
-    font-size: 60px;    
+    line-height: 60px;
+    font-size:inherit;
     display: block;
     color: #fff;
 	background-color: gray;
