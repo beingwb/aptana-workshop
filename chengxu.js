@@ -12,9 +12,9 @@ function paixu(){
 function chushihua(){
     document.write("<div id=\"qipan\">");
     for (var i = 0; i < 25; i++) {
-         document.write("<span id=s" + i + " ontouchstart=\"down(" + i + ")\" ontouchend=\"up(" + i + ")\"></span>");
+        document.write("<span id=s" + i + " ontouchstart=\"down(" + i + ")\" ontouchend=\"up(" + i + ")\"></span>");
         //  document.write("<span id=s" + i + " onmousedown=\"down(" + i + ")\" onmouseup=\"up(" + i + ")\"></span>");
-      //  document.write("<span id=s" + i + " ontouchstart=\"down(" + i + ")\" ontouchend=\"up(" + i + ")\" onmousedown=\"down(" + i + ")\" onmouseup=\"up(" + i + ")\" ></span>");
+        // document.write("<span id=s" + i + " ontouchstart=\"down(" + i + ")\" ontouchend=\"up(" + i + ")\" onmousedown=\"down(" + i + ")\" onmouseup=\"up(" + i + ")\" ></span>");
     }
     document.write("</div>");
     tianchong();
@@ -30,26 +30,32 @@ function tianchong(){
 function down(x){
 
     if (dianjiluoji(x)) {
-        document.getElementById('s' + x).style.background = "#bbbbbb";
+        document.getElementById('s' + x).style.border = " 2px gray inset";
     }
     
 };
 
 function up(x){
-    document.getElementById('s' + x).style.background = "gray";
-    if (dian == 26) {
+    document.getElementById('s' + x).style.border = " 2px gray outset"
+    if (now_dianji >= 26) {
         clearTimeout(t);
-        chengji = document.getElementById('miaobiao').innerHTML
-        //document.getElementById("kongzhi").innerHTML = "重新开始"
-        alert(chengji);
-        weixinfenxiang();
+        chengji = document.getElementById('miaobiao').innerHTML;
+         weixinfenxiang();
+        if (confirm("您的本局"+chengji+"是否再来一局？")) {
+           kaishiwan();
+        }
+        else {
+           return false;
+        }
+ //alert(chengji);
+        
     }
     return false;
 };
 
 function dianjiluoji(x){
-    if (document.getElementById("s" + x).innerHTML == dian) {
-        dian++;
+    if (document.getElementById("s" + x).innerHTML == now_dianji) {
+        now_dianji++;
         return true;
     }
     return false;
@@ -73,7 +79,7 @@ function miaobiao_start(){
 }
 
 function kaishiwan(){
-    dian = 1; //定义当前点的该是哪个数字
+    now_dianji = 1; //定义当前点的该是哪个数字
     var x = new Date();
     temp_time = x.getTime(); //定义当前时间点
     miaobiao_start();
@@ -93,7 +99,7 @@ function weixinfenxiang(){
             "appId": "", // 服务号可以填写appId
             "imgUrl": 'http://10.0.51.127/logo.jpg',
             "link": 'http://10.0.51.127/',
-            "desc": chengji+'秒，我在注意力测试小游戏中的最好成绩。你也来试试吧：）',
+            "desc": chengji + '秒，我在注意力测试小游戏中的最好成绩。你也来试试吧：）',
             "title": "注意力训练小游戏测试"
         };
         

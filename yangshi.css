@@ -14,7 +14,7 @@
 #qipan span {
  float: left;
     line-height: 60px;
-   	font-size:inherit;
+   	font-size:25px;
     background-color: gray;
     width: 60px;
     height: 60px;
@@ -28,7 +28,7 @@
     width: 320px;
 	text-align: center;
     line-height: 60px;
-    font-size:inherit;
+    font-size:25px;
     display: block;
     color: #fff;
 	background-color: gray;
@@ -42,7 +42,7 @@
     width: 320px;
 	text-align: center;
     line-height: 60px;
-    font-size:inherit;
+    font-size:25px;
     display: block;
     color: #fff;
 	background-color: gray;
