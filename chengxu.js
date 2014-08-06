@@ -107,7 +107,7 @@ function weixinfenxiang(){
             "imgUrl": 'http://10.0.51.127/logo.jpg',
             "link": 'http://10.0.51.127/',
             "desc": chengji + '秒，我在注意力测试小游戏中的最好成绩。你也来试试吧：）',
-            "title": "注意力训练小游戏测试"
+            "title": "注意力训练小游戏"
         };
         
         
