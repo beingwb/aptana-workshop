@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+#qipan {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 640px;
+    display: block;
+    color: #fff;
+	
+}
+
+#qipan span {
+	margin-left: auto;
+    margin-right: auto;
+    float: left;
+    line-height: 120px;
+    font-size: 60px;
+    background-color: gray;
+    width: 120px;
+    height: 120px;
+    border: 2px gray outset;
+    margin: 2 2 2 2;
+    overflow: hidden;
+}
+
+#miaobiao {
+    margin-left: auto;
+    margin-right: auto;
+    width: 640px;
+	text-align: center;
+    line-height: 120px;
+    font-size: 60px;    
+    display: block;
+    color: #fff;
+	background-color: gray;
+	border: 2px gray outset;
+
+}
+
+#kongzhi {
+    margin-left: auto;
+    margin-right: auto;
+    width: 640px;
+	text-align: center;
+    line-height: 120px;
+    font-size: 60px;    
+    display: block;
+    color: #fff;
+	background-color: gray;
+	border: 2px gray outset;
+
+}
