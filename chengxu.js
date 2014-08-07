@@ -104,8 +104,8 @@ function weixinfenxiang(){
         // 微信分享的数据
         var wxData = {
             "appId": "", // 服务号可以填写appId
-            "imgUrl": 'http://10.0.51.127/logo.jpg',
-            "link": 'http://10.0.51.127/',
+            "imgUrl": 'http://moxamax.wicp.net/logo.jpg',
+            "link": 'http://moxamax.wicp.net/',
             "desc": '从1数到25我只'+chengji + '秒，你也来试试吧：）',
             "title": "注意力训练小游戏"
         };
